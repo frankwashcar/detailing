@@ -14,28 +14,22 @@
         h1 { font-size: clamp(1.5rem, 8vw, 1.8rem); color: var(--text-brown); margin: 5px 0; letter-spacing: 2px; font-weight: 800; white-space: nowrap; }
         .main-slogan { font-size: 1.1rem; color: #8D6E63; font-weight: 800; margin: 18px 0 25px; text-align: center; }
         
-        /* 服務特色 */
         .intro-features { padding: 35px 15px; max-width: 850px; margin: -40px auto 40px; background: #fff; border-radius: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 2px solid #D7CCC8; position: relative; z-index: 10; text-align: center; width: calc(100% - 30px); box-sizing: border-box; }
         .feature-line { margin-bottom: 15px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 700; }
         .feature-line i { color: #5D4037; min-width: 25px; margin-right: 10px; font-size: 1.2rem; }
         .location-box { background: #D7CCC8; padding: 20px 15px; border-radius: 15px; margin-top: 25px; color: #3E2723; border: 1px solid #A1887F; }
         .location-main { font-weight: 900; font-size: 1rem; letter-spacing: 1px; margin-bottom: 12px; color: #1A1A1A; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px 15px; }
         .location-sub { font-size: 0.95rem; color: #2C1E1B; font-weight: 700; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 15px; line-height: 1.8; }
-        .location-sub span { white-space: nowrap; }
 
-        /* 社群導流 */
         .social-promo { text-align: center; padding: 40px 20px; background: #fff; border-radius: 20px; max-width: 800px; margin: 20px auto 50px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
-        .social-promo h2 { color: var(--text-brown); font-size: 1.5rem; font-weight: 800; margin-bottom: 20px; }
-        .social-promo p { font-size: 1rem; color: #555; margin-bottom: 30px; font-weight: 500; }
-        .promo-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .promo-btn { padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 10px; transition: 0.3s; font-size: 0.95rem; }
-        .btn-fb { background: #1877F2; color: white; }
-        .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
+        .promo-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+        .promo-btn { padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: white; }
+        .btn-fb { background: #1877F2; }
+        .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
         .section-title { text-align: center; color: var(--text-brown); margin: 60px 0 30px; font-size: 1.7rem; position: relative; padding-bottom: 15px; font-weight: 800; }
         .section-title::after { content: ''; width: 50px; height: 5px; background: var(--accent-gold); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 3px; }
 
-        /* 方案卡片 */
         .services { padding: 0 15px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 30px; }
         .service-card { background: #fff; padding: 35px 25px; border-radius: 25px; box-shadow: 0 12px 30px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; box-sizing: border-box; }
         .service-card h3 { margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 25px; text-align: center; font-weight: 800; }
@@ -46,9 +40,12 @@
         .price-tag { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 12px; margin-top: 20px; border: 1px solid rgba(255,255,255,0.1); }
         .price-row { display: flex; justify-content: space-between; font-size: 1rem; margin: 8px 0; color: #fff; font-weight: 900; }
         
-        /* 蠟品顯示優化 */
-        .highlight-wax { padding: 15px; border-radius: 10px; margin-top: 15px; font-weight: 600; border: 1px dashed rgba(255,255,255,0.5); font-size: 0.95rem; text-align: center; line-height: 1.8; color: #fff; }
-        .highlight-wax strong { color: var(--card-dark-gold); margin-right: 5px; font-size: 1.05rem; }
+        /* 蠟品打勾排列優化 */
+        .highlight-wax { padding: 15px; border-radius: 10px; margin-top: 15px; border: 1px dashed rgba(255,255,255,0.5); text-align: center; color: #fff; }
+        .highlight-wax .wax-title { display: block; font-weight: 900; font-size: 1.1rem; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px; }
+        .highlight-wax ul { list-style: none; padding: 0; margin: 0; display: inline-block; text-align: left; }
+        .highlight-wax ul li { font-size: 0.95rem; font-weight: 600; line-height: 1.8; }
+        .highlight-wax ul li::before { content: '✓'; color: #fff; margin-right: 8px; font-weight: 900; }
 
         .medium-card { background-color: var(--card-medium-bg) !important; color: #fff !important; }
         .medium-card h3 { color: #fff !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
@@ -56,14 +53,14 @@
         .advanced-card h3 { color: var(--card-dark-gold) !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
         .advanced-card .price-row { color: var(--card-dark-gold) !important; }
         .advanced-card .highlight-wax { border-color: var(--card-dark-gold) !important; }
-        .advanced-card .highlight-wax strong { color: var(--card-dark-gold); }
+        .advanced-card .highlight-wax .wax-title { color: var(--card-dark-gold); border-bottom-color: rgba(196,167,125,0.3); }
+        .advanced-card .highlight-wax ul li::before { color: var(--card-dark-gold); }
 
         .addon-card { background: #fff !important; color: var(--text-dark) !important; }
         .addon-card h3 { color: var(--text-brown) !important; }
         .addon-card .price-tag { background: #FDFBFB !important; border-color: #EFEBE4 !important; }
         .addon-card .price-row { color: var(--text-dark) !important; }
 
-        /* 預約 */
         .booking-section { padding: 100px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; background-color: var(--secondary-bg); margin-top: 80px; }
         .booking-container { width: 100%; max-width: 450px; background: white; padding: 50px 30px; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.15); border: 2px solid #D7CCC8; }
         .qr-placeholder img { width: 190px; height: 190px; margin: 30px 0; border: 2px solid #A1887F; border-radius: 20px; padding: 10px; }
@@ -114,7 +111,10 @@
                 <div class="price-row"><span>休旅</span><span>$1,500</span></div>
                 <div class="price-row"><span>商務</span><span>$2,200</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> Adam's H2O / Adam's Boost</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>Adam's H2O</li><li>Adam's Boost</li></ul>
+            </div>
         </div>
         <div class="service-card medium-card">
             <h3>基礎維護</h3>
@@ -122,9 +122,12 @@
             <div class="price-tag">
                 <div class="price-row"><span>轎車</span><span>$1,100</span></div>
                 <div class="price-row"><span>休旅</span><span>$1,200</span></div>
-                <div class="price-row"><span>商務</span><span>$1,700</span></div>
+                <div class="price-row)<span>商務</span><span>$1,700</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> Adam's Spray Wax</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>Adam's Spray Wax</li></ul>
+            </div>
         </div>
         <div class="service-card medium-card">
             <h3>經典護理</h3>
@@ -134,7 +137,10 @@
                 <div class="price-row"><span>休旅</span><span>$1,500</span></div>
                 <div class="price-row"><span>商務</span><span>$2,500</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> 頂級棕梠蠟 / Adam's H2O</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>頂級棕梠蠟</li><li>Adam's H2O</li></ul>
+            </div>
         </div>
     </section>
 
@@ -148,7 +154,10 @@
                 <div class="price-row"><span>休旅</span><span>$3,500</span></div>
                 <div class="price-row"><span>商務</span><span>$4,500</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> Swissvax 瑪瑙蠟 / Adam's Boost</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul>
+            </div>
         </div>
         <div class="service-card advanced-card">
             <h3>小美容</h3>
@@ -158,7 +167,10 @@
                 <div class="price-row"><span>休旅</span><span>$5,500</span></div>
                 <div class="price-row"><span>商務</span><span>$7,000</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> Swissvax 瑪瑙蠟 / Adam's Boost</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul>
+            </div>
         </div>
         <div class="service-card advanced-card">
             <h3>鍍膜方案</h3>
@@ -168,7 +180,10 @@
                 <div class="price-row"><span>休旅</span><span>$7,500</span></div>
                 <div class="price-row"><span>商務</span><span>$9,000</span></div>
             </div>
-            <div class="highlight-wax"><strong>漆面</strong> Olima RC 9H 鍍膜 / Olima T1 塑料鍍膜</div>
+            <div class="highlight-wax">
+                <span class="wax-title">漆面</span>
+                <ul><li>Olima RC 9H 鍍膜</li><li>Olima T1 塑料鍍膜</li></ul>
+            </div>
         </div>
     </section>
 
