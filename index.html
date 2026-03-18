@@ -1,15 +1,85 @@
-<div class="service-card">
-    <i class="fas fa-hand-sparkles"></i>
-    <h3>經典護理</h3>
-    <p>選用高品質 **棕櫚蠟** 與 **亞當 H2O** 施作，為車漆提供極致撥水與深邃光澤。</p>
-</div>
-<div class="service-card">
-    <i class="fas fa-gem"></i>
-    <h3>極致全護</h3>
-    <p>頂級 **Swissvax 瑪瑙蠟** 搭配 **亞當 Boost**，職人級手工上蠟，打造展間級奢華質感。</p>
-</div>
-<div class="service-card">
-    <i class="fas fa-certificate"></i>
-    <h3>精緻迎春</h3>
-    <p>全車 **玻璃鍍膜**、**亞當 H2O** 及 **亞當 Boost** 三重防護，讓愛車煥然一新。</p>
-</div>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法蘭克精緻汽車美容 | 工程師的職人洗車</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #C4A77D; --text-dark: #4A4A4A; --text-brown: #5D4037; }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; background-color: var(--primary-bg); color: var(--text-dark); line-height: 1.6; }
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(rgba(253,251,251,0.92), rgba(253,251,251,0.92)), url('https://images.unsplash.com/photo-1552933529-e359b2477262?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; }
+        .badge { display: inline-block; background: var(--text-brown); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 15px; font-weight: bold; }
+        h1 { font-size: 2.2rem; color: var(--text-brown); margin: 10px 0; }
+        .location-tag { color: var(--accent-gold); font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; letter-spacing: 1px; }
+        .services { padding: 40px 20px; max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; border-bottom: 4px solid var(--accent-gold); }
+        .service-card h3 { color: var(--text-brown); margin-top: 0; font-size: 1.4rem; }
+        .feature-grid { background-color: var(--secondary-bg); padding: 50px 20px; text-align: center; }
+        .feature-item { max-width: 800px; margin: 10px auto; font-size: 1.1rem; color: var(--text-brown); display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .booking-section { padding: 60px 20px; text-align: center; }
+        .booking-container { max-width: 500px; margin: 0 auto; background: white; padding: 35px; border-radius: 25px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border: 1px solid #eee; }
+        .qr-placeholder img { width: 180px; height: 180px; margin: 20px 0; border: 1px solid #f0f0f0; padding: 5px; }
+        .btn-line { background-color: #06C755; color: white; padding: 14px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1rem; transition: 0.3s; }
+        .btn-line:hover { opacity: 0.9; transform: scale(1.02); }
+        .social-info { margin-top: 25px; color: #666; font-size: 0.95rem; }
+        .social-info i { width: 20px; color: var(--accent-gold); }
+        footer { padding: 40px 20px; text-align: center; color: #999; font-size: 0.85rem; background: #fafafa; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="badge">💻 工程師的副業：效率洗車找法蘭克</div>
+        <h1>法蘭克精緻汽車美容</h1>
+        <div class="location-tag">新莊｜泰山｜板橋｜蘆洲｜中永和｜大台北｜龜山</div>
+        <p style="max-width: 600px; margin: 0 auto;">邏輯經營、誠信服務。雖然沒有固定店面，但我帶上最專業的藥劑與設備，給您最信賴的洗車體驗。</p>
+    </header>
+
+    <section class="services">
+        <div class="service-card">
+            <i class="fas fa-hand-sparkles" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
+            <h3>經典護理</h3>
+            <p>高品質 <b>棕櫚蠟</b> 搭配 <b>亞當 H2O</b>，兼具效率與漆面深度光澤。</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-gem" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
+            <h3>極致全護</h3>
+            <p>頂級 <b>Swissvax 瑪瑙蠟</b> 與 <b>亞當 Boost</b>，職人級手工上蠟保護。</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-snowflake" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px;"></i>
+            <h3>精緻迎春</h3>
+            <p>包含 <b>亞當 H2O/Boost</b> 及 <b>全車玻璃鍍膜</b>，愛車煥然一新的首選。</p>
+        </div>
+    </section>
+
+    <section class="feature-grid">
+        <div class="feature-item"><i class="fas fa-check-circle"></i> 移動式洗車服務，到您附近的自助洗車場作業</div>
+        <div class="feature-item"><i class="fas fa-check-circle"></i> 免費到府牽車／代洗服務，讓您在家輕鬆休息</div>
+        <div class="feature-item"><i class="fas fa-check-circle"></i> 專業進口藥劑與設備，不傷漆面，細節至上</div>
+        <div class="feature-item"><i class="fas fa-check-circle"></i> 汽車、機車皆可服務，誠信經營最安心</div>
+    </section>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2 style="color: var(--text-brown); margin-top: 0;">美好行程，從潔淨開始</h2>
+            <p>立即掃描或點擊下方按鈕預約</p>
+            <div class="qr-placeholder">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/AgnWGzM" alt="預約QR Code">
+            </div>
+            <a href="https://lin.ee/AgnWGzM" class="btn-line"><i class="fab fa-line"></i> LINE 立即預約</a>
+            
+            <div class="social-info">
+                <p><i class="fab fa-facebook"></i> 法蘭克精緻汽車美容</p>
+                <p><i class="fab fa-instagram"></i> @frank_wash_car</p>
+                <p><i class="fas fa-comment"></i> LINE ID：@frank.wash</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 法蘭克精緻汽車美容. All Rights Reserved.</p>
+        <p>專業藥劑 · 效率服務 · 職人精神</p>
+    </footer>
+</body>
+</html>
