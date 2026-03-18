@@ -40,12 +40,12 @@
         .price-tag { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 12px; margin-top: 20px; border: 1px solid rgba(255,255,255,0.1); }
         .price-row { display: flex; justify-content: space-between; font-size: 1rem; margin: 8px 0; color: #fff; font-weight: 900; }
         
-        /* 蠟品打勾排列優化 */
-        .highlight-wax { padding: 15px; border-radius: 10px; margin-top: 15px; border: 1px dashed rgba(255,255,255,0.5); text-align: center; color: #fff; }
-        .highlight-wax .wax-title { display: block; font-weight: 900; font-size: 1.1rem; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 5px; }
-        .highlight-wax ul { list-style: none; padding: 0; margin: 0; display: inline-block; text-align: left; }
-        .highlight-wax ul li { font-size: 0.95rem; font-weight: 600; line-height: 1.8; }
-        .highlight-wax ul li::before { content: '✓'; color: #fff; margin-right: 8px; font-weight: 900; }
+        /* 蠟品打勾排列強化 - 使用 Flex 佈局確保不跑位 */
+        .highlight-wax { padding: 15px; border-radius: 10px; margin-top: 15px; border: 1px dashed rgba(255,255,255,0.5); text-align: center; color: #fff; display: flex; flex-direction: column; align-items: center; }
+        .highlight-wax .wax-title { font-weight: 900; font-size: 1.1rem; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2); width: 100%; padding-bottom: 5px; }
+        .highlight-wax ul { list-style: none; padding: 0; margin: 0; text-align: left; }
+        .highlight-wax ul li { font-size: 0.95rem; font-weight: 600; line-height: 1.8; display: flex; align-items: center; }
+        .highlight-wax ul li::before { content: '✓'; color: #fff; margin-right: 10px; font-weight: 900; }
 
         .medium-card { background-color: var(--card-medium-bg) !important; color: #fff !important; }
         .medium-card h3 { color: #fff !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
@@ -111,10 +111,7 @@
                 <div class="price-row"><span>休旅</span><span>$1,500</span></div>
                 <div class="price-row"><span>商務</span><span>$2,200</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>Adam's H2O</li><li>Adam's Boost</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>Adam's H2O</li><li>Adam's Boost</li></ul></div>
         </div>
         <div class="service-card medium-card">
             <h3>基礎維護</h3>
@@ -122,12 +119,9 @@
             <div class="price-tag">
                 <div class="price-row"><span>轎車</span><span>$1,100</span></div>
                 <div class="price-row"><span>休旅</span><span>$1,200</span></div>
-                <div class="price-row)<span>商務</span><span>$1,700</span></div>
+                <div class="price-row"><span>商務</span><span>$1,700</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>Adam's Spray Wax</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>Adam's Spray Wax</li></ul></div>
         </div>
         <div class="service-card medium-card">
             <h3>經典護理</h3>
@@ -137,10 +131,7 @@
                 <div class="price-row"><span>休旅</span><span>$1,500</span></div>
                 <div class="price-row"><span>商務</span><span>$2,500</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>頂級棕梠蠟</li><li>Adam's H2O</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>頂級棕梠蠟</li><li>Adam's H2O</li></ul></div>
         </div>
     </section>
 
@@ -154,10 +145,7 @@
                 <div class="price-row"><span>休旅</span><span>$3,500</span></div>
                 <div class="price-row"><span>商務</span><span>$4,500</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul></div>
         </div>
         <div class="service-card advanced-card">
             <h3>小美容</h3>
@@ -167,10 +155,7 @@
                 <div class="price-row"><span>休旅</span><span>$5,500</span></div>
                 <div class="price-row"><span>商務</span><span>$7,000</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>Swissvax 瑪瑙蠟</li><li>Adam's Boost</li></ul></div>
         </div>
         <div class="service-card advanced-card">
             <h3>鍍膜方案</h3>
@@ -180,10 +165,7 @@
                 <div class="price-row"><span>休旅</span><span>$7,500</span></div>
                 <div class="price-row"><span>商務</span><span>$9,000</span></div>
             </div>
-            <div class="highlight-wax">
-                <span class="wax-title">漆面</span>
-                <ul><li>Olima RC 9H 鍍膜</li><li>Olima T1 塑料鍍膜</li></ul>
-            </div>
+            <div class="highlight-wax"><span class="wax-title">漆面</span><ul><li>Olima RC 9H 鍍膜</li><li>Olima T1 塑料鍍膜</li></ul></div>
         </div>
     </section>
 
