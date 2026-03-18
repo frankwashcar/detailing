@@ -24,19 +24,18 @@
         .gallery-item { position: relative; overflow: hidden; border-radius: 10px; height: 160px; cursor: pointer; background: #eee; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* 方案卡片：直列式內容排版 */
         .services { padding: 0 15px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
         .service-card { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #f5f5f5; }
         .service-card h3 { color: var(--accent-gold); margin-top: 0; font-size: 1.35rem; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; text-align: center; }
         
-        .service-list { list-style: none; padding: 0; text-align: left; font-size: 0.92rem; margin: 0 auto; display: inline-block; width: 100%; }
+        .service-list { list-style: none; padding: 0; text-align: left; font-size: 0.92rem; margin: 0 auto; width: 100%; }
         .service-list li { margin-bottom: 6px; display: flex; align-items: flex-start; line-height: 1.5; }
         .service-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 10px; font-weight: 900; }
         
-        .highlight-wax { background: #fffaf5; padding: 10px; border-radius: 8px; margin-top: 15px; font-weight: 600; color: var(--text-brown); border: 1px dashed var(--accent-gold); font-size: 0.85rem; text-align: center; clear: both; }
+        .highlight-wax { background: #fffaf5; padding: 10px; border-radius: 8px; margin-top: 15px; font-weight: 600; color: var(--text-brown); border: 1px dashed var(--accent-gold); font-size: 0.85rem; text-align: center; }
 
         /* 預約區塊強制置中 */
-        .booking-section { padding: 60px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .booking-section { padding: 60px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .booking-container { width: 100%; max-width: 400px; background: white; padding: 40px 20px; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; box-sizing: border-box; margin: 0 auto; }
         .qr-placeholder img { width: 170px; height: 170px; margin: 25px 0; border: 1px solid #eee; padding: 6px; border-radius: 10px; }
         .btn-line { background-color: #06C755; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.15rem; width: 80%; max-width: 250px; }
@@ -120,31 +119,32 @@
             <h3>極致全護</h3>
             <ul class="service-list">
                 <li>包含尊榮美容項目</li>
-                <li>漆面美白清潔蠟施作</li>
                 <li>全車深層去汙程序</li>
+                <li>漆面美白清潔蠟施作</li>
                 <li>手工上瑪瑙蠟護理</li>
             </ul>
             <div class="highlight-wax">蠟品：Swissvax 瑪瑙蠟 + 亞當 Boost</div>
         </div>
         <div class="service-card">
-            <h3>小美容與基礎拋光</h3>
+            <h3>小美容</h3>
             <ul class="service-list">
+                <li>包含尊榮美容項目</li>
                 <li>漆面基礎拋光處理</li>
                 <li>漆面深層潔淨還原</li>
                 <li>細紋淡化提升亮度</li>
-                <li>瑪瑙蠟保護層施作</li>
+                <li>Swissvax 瑪瑙蠟保護層</li>
             </ul>
-            <div class="highlight-wax">蠟品：Swissvax 瑪瑙蠟 + 亞當 Boost</div>
+            <div class="highlight-wax">施作蠟品：Swissvax 瑪瑙蠟 + 亞當 Boost</div>
         </div>
         <div class="service-card">
-            <h3>專業鍍膜方案</h3>
+            <h3>鍍膜方案</h3>
             <ul class="service-list">
-                <li>漆面校正拋光處理</li>
-                <li>外觀塑料長效鍍膜</li>
+                <li>包含尊榮美容項目</li>
+                <li>漆面基礎拋光處理</li>
+                <li>Olima T1 外觀塑料長效鍍膜</li>
                 <li>Olima RC 9H 鍍膜施作</li>
-                <li>全車玻璃撥水塗層</li>
             </ul>
-            <div class="highlight-wax">藥劑：Olima 系列專業長效鍍膜</div>
+            <div class="highlight-wax">藥劑：Olima 系列專業鍍膜</div>
         </div>
     </section>
 
@@ -152,7 +152,7 @@
     <section class="services">
         <div class="service-card">
             <h3>專屬加購服務</h3>
-            <ul class="service-list" style="display: block;">
+            <ul class="service-list">
                 <li>• 外觀塑料護理 / 內裝保養護理</li>
                 <li>• 美白清潔蠟 / 棕梠蠟等級升級</li>
                 <li>• 塑料長效鍍膜 / 刮痕局部拋光</li>
