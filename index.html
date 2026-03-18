@@ -6,22 +6,20 @@
     <title>法蘭克精緻汽車美容 | 職人級車漆護理</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #B08D57; --text-dark: #1A1A1A; --text-brown: #3E2723; --card-dark-bg: #3E2723; --card-dark-gold: #D4B78D; --card-medium-bg: #6D4C41; --card-medium-gold: #FDFBFB; }
+        :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #B08D57; --text-dark: #1A1A1A; --text-brown: #3E2723; --card-dark-bg: #3E2723; --card-dark-gold: #D4B78D; --card-medium-bg: #6D4C41; }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; background-color: var(--primary-bg); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
         
         header { text-align: center; padding: 50px 15px; background: linear-gradient(rgba(253,251,251,0.96), rgba(253,251,251,0.96)), url('https://images.unsplash.com/photo-1552933529-e359b2477262?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #f0f0f0; }
         .badge { display: inline-block; background: var(--text-brown); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; margin-bottom: 15px; font-weight: bold; letter-spacing: 1px; }
-        h1 { font-size: 1.8rem; color: var(--text-brown); margin: 5px 0; letter-spacing: 2px; font-weight: 800; white-space: nowrap; }
-        .main-slogan { font-size: 1.15rem; color: #8D6E63; font-weight: 800; margin: 18px 0 25px; letter-spacing: 1.5px; line-height: 1.7; padding: 0 10px; text-align: center; }
+        h1 { font-size: 1.8rem; color: var(--text-brown); margin: 5px 0; letter-spacing: 2px; font-weight: 800; }
+        .main-slogan { font-size: 1.15rem; color: #8D6E63; font-weight: 800; margin: 18px 0 25px; text-align: center; }
         
         /* 服務特色強化 */
         .intro-features { padding: 40px 25px; max-width: 850px; margin: -40px auto 40px; background: #fff; border-radius: 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 2px solid #D7CCC8; position: relative; z-index: 10; text-align: center; }
-        .feature-line { margin-bottom: 15px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; color: #000000; font-weight: 700; }
+        .feature-line { margin-bottom: 15px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 700; }
         .feature-line i { color: #5D4037; margin-right: 15px; font-size: 1.2rem; }
-        
-        /* 地區與重劃區 */
         .location-box { background: #D7CCC8; padding: 25px; border-radius: 15px; margin-top: 25px; color: #3E2723; border: 1px solid #A1887F; }
-        .location-main { font-weight: 900; font-size: 1.1rem; letter-spacing: 1.5px; margin-bottom: 12px; color: #1A1A1A; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px; }
+        .location-main { font-weight: 900; font-size: 1.1rem; margin-bottom: 12px; color: #1A1A1A; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px; }
         .location-sub { font-size: 1rem; color: #2C1E1B; font-weight: 700; display: block; line-height: 1.8; }
 
         .section-title { text-align: center; color: var(--text-brown); margin: 60px 0 30px; font-size: 1.7rem; position: relative; padding-bottom: 15px; font-weight: 800; }
@@ -34,32 +32,32 @@
         .service-list li { margin-bottom: 12px; }
         .service-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 12px; font-weight: 900; }
         
-        .price-tag { background: #FDFBFB; padding: 15px; border-radius: 12px; margin-top: 20px; border: 2px solid #EFEBE4; }
-        .price-row { display: flex; justify-content: space-between; font-size: 1rem; margin: 8px 0; color: #1A1A1A; font-weight: 900; }
-        .highlight-wax { padding: 12px; border-radius: 10px; margin-top: 15px; font-weight: 600; border: 1px dashed var(--accent-gold); font-size: 0.95rem; text-align: center; line-height: 1.8; }
+        /* 價格標籤：修復白色背景問題 */
+        .price-tag { background: rgba(0,0,0,0.2) !important; padding: 15px; border-radius: 12px; margin-top: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .price-row { display: flex; justify-content: space-between; font-size: 1rem; margin: 8px 0; color: #fff !important; font-weight: 900; }
+        .highlight-wax { padding: 12px; border-radius: 10px; margin-top: 15px; font-weight: 600; border: 1px dashed rgba(255,255,255,0.5); font-size: 0.95rem; text-align: center; line-height: 1.8; color: #fff; }
 
         /* 分色卡片樣式 */
+        .medium-card { background-color: var(--card-medium-bg) !important; color: #fff !important; }
+        .medium-card h3 { color: #fff !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
+
         .advanced-card { background-color: var(--card-dark-bg) !important; color: #fff !important; }
         .advanced-card h3 { color: var(--card-dark-gold) !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
         .advanced-card .price-row { color: var(--card-dark-gold) !important; }
-        .advanced-card .highlight-wax { color: var(--card-dark-gold) !important; border-color: var(--card-dark-gold) !important; }
+        .advanced-card .highlight-wax { border-color: var(--card-dark-gold) !important; color: var(--card-dark-gold) !important; }
 
-        .medium-card { background-color: var(--card-medium-bg) !important; color: #fff !important; }
-        .medium-card h3 { color: #fff !important; border-bottom-color: rgba(255,255,255,0.2) !important; }
-        .medium-card .price-row { color: #fff !important; }
-        .medium-card .highlight-wax { color: #fff !important; border-color: rgba(255,255,255,0.5) !important; }
+        /* 專屬加購 */
+        .addon-card { background: #fff !important; color: var(--text-dark) !important; }
+        .addon-card .price-tag { background: #FDFBFB !important; border-color: #EFEBE4 !important; }
+        .addon-card .price-row { color: var(--text-dark) !important; }
 
-        /* 預約與社群 */
         .booking-section { padding: 100px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; background-color: var(--secondary-bg); margin-top: 80px; }
         .booking-container { width: 100%; max-width: 450px; background: white; padding: 50px 30px; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.15); border: 2px solid #D7CCC8; }
         .qr-placeholder img { width: 190px; height: 190px; margin: 30px 0; border: 2px solid #A1887F; border-radius: 20px; padding: 10px; }
         .btn-line { background-color: #06C755; color: white; padding: 18px 60px; border-radius: 60px; text-decoration: none; font-weight: 900; display: inline-block; font-size: 1.3rem; margin-bottom: 25px; }
-        
-        .social-info { margin-top: 20px; border-top: 2px solid #f0f0f0; padding-top: 25px; }
         .social-info a { color: var(--text-brown); text-decoration: none; display: block; margin: 15px 0; font-weight: 800; font-size: 1.05rem; }
-        .social-info a i { margin-right: 10px; font-size: 1.2rem; color: #B08D57; }
 
-        footer { padding: 60px 15px; text-align: center; color: #5D4037; font-weight: 700; font-size: 0.95rem; background: #EFEBE4; }
+        footer { padding: 60px 15px; text-align: center; color: #5D4037; font-weight: 700; background: #EFEBE4; }
 
         @media (min-width: 768px) {
             .services { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
@@ -166,8 +164,8 @@
 
     <h2 class="section-title">專屬加購服務</h2>
     <section class="services">
-        <div class="service-card">
-            <div class="price-tag" style="background: none; border: none; padding: 0;">
+        <div class="service-card addon-card">
+            <div class="price-tag">
                 <div class="price-row"><span>外觀塑料護理</span><span>+$300</span></div>
                 <div class="price-row"><span>內裝保養護理</span><span>+$300</span></div>
                 <div class="price-row"><span>美白清潔蠟施作</span><span>+$800</span></div>
@@ -188,10 +186,9 @@
             </div>
             <br>
             <a href="https://lin.ee/AgnWGzM" class="btn-line"><i class="fab fa-line"></i> LINE 立即預約</a>
-            
-            <div class="social-info">
-                <a href="https://www.facebook.com/profile.php?id=100063773703118" target="_blank"><i class="fab fa-facebook-square"></i> FB：法蘭克精緻汽車美容</a>
-                <a href="https://www.instagram.com/frank_wash_car" target="_blank"><i class="fab fa-instagram"></i> IG：@frank_wash_car</a>
+            <div style="margin-top: 25px;">
+                <a href="https://www.facebook.com/profile.php?id=100063773703118" target="_blank" style="color: var(--text-brown); text-decoration: none; display: block; margin-bottom: 15px; font-weight: 800;">FB：法蘭克精緻汽車美容</a>
+                <a href="https://www.instagram.com/frank_wash_car" target="_blank" style="color: var(--text-brown); text-decoration: none; font-weight: 800;">IG：@frank_wash_car</a>
             </div>
         </div>
     </section>
