@@ -8,33 +8,79 @@
     <style>
         :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #C4A77D; --text-dark: #4A4A4A; --text-brown: #5D4037; }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; background-color: var(--primary-bg); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
-        header { text-align: center; padding: 50px 15px; background: linear-gradient(rgba(253,251,251,0.96), rgba(253,251,251,0.96)), url('https://images.unsplash.com/photo-1552933529-e359b2477262?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #f0f0f0; }
-        .badge { display: inline-block; background: var(--text-brown); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; margin-bottom: 15px; font-weight: bold; letter-spacing: 1px; }
-        h1 { font-size: 1.8rem; color: var(--text-brown); margin: 5px 0; letter-spacing: 2px; font-weight: 800; white-space: nowrap; }
-        .main-slogan { font-size: 1.1rem; color: var(--accent-gold); font-weight: 600; margin: 18px 0 25px; letter-spacing: 1.5px; line-height: 1.7; padding: 0 10px; display: block; text-align: center; }
-        
-        /* 經營特色區塊 */
-        .intro-features { padding: 40px 20px; max-width: 800px; margin: 0 auto; background: #fff; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; margin-top: -30px; position: relative; z-index: 10; text-align: center; }
-        .intro-features h2 { color: var(--text-brown); font-size: 1.3rem; margin-bottom: 20px; }
-        .feature-line { margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; color: var(--text-dark); }
-        .feature-line i { color: var(--accent-gold); margin-right: 10px; font-size: 1.1rem; }
-        
-        .location-box { background: var(--secondary-bg); padding: 15px; border-radius: 12px; margin-top: 25px; font-size: 0.9rem; color: var(--text-brown); font-weight: 600; letter-spacing: 1px; }
-
-        .nav-btn { background: var(--accent-gold); color: white; padding: 13px 0; width: 210px; border-radius: 50px; text-decoration: none; font-weight: bold; display: block; margin: 25px auto; transition: 0.3s; font-size: 0.95rem; }
-        .section-title { text-align: center; color: var(--text-brown); margin: 60px 0 30px; font-size: 1.5rem; position: relative; padding-bottom: 12px; font-weight: 700; letter-spacing: 1px; }
-        .section-title::after { content: ''; width: 35px; height: 3px; background: var(--accent-gold); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 2px; }
-
-        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
-        .gallery-item { position: relative; overflow: hidden; border-radius: 10px; height: 160px; cursor: pointer; background: #eee; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
-
+        header { text-align: center; padding: 50px 15px; background-color: var(--primary-bg); border-bottom: 1px solid #f0f0f0; }
+        .badge { display: inline-block; background: var(--text-brown); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; margin-bottom: 15px; font-weight: bold; }
+        h1 { font-size: 1.8rem; color: var(--text-brown); margin: 5px 0; font-weight: 800; }
+        .main-slogan { font-size: 1.1rem; color: var(--accent-gold); font-weight: 600; margin: 18px 0; text-align: center; }
+        .intro-features { padding: 30px 20px; max-width: 800px; margin: 20px auto; background: #fff; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); text-align: center; }
+        .location-box { background: var(--secondary-bg); padding: 12px; border-radius: 12px; margin-top: 20px; font-weight: 600; font-size: 0.85rem; }
         .services { padding: 0 15px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
         .service-card { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #f5f5f5; }
-        .service-card h3 { color: var(--accent-gold); margin-top: 0; font-size: 1.35rem; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px; text-align: center; }
-        .service-list { list-style: none; padding: 0; text-align: left; font-size: 0.92rem; margin: 0 auto; width: 100%; }
-        .service-list li { margin-bottom: 8px; display: block; line-height: 1.5; }
-        .service-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 10px; font-weight: 900; }
-        
-        .price-tag { background: #fdfaf4; padding: 12px; border-radius: 10px; margin-top: 15px; border: 1px solid #eee; }
-        .price-row { display: flex; justify-content: space-between; font-size:
+        .service-list { list-style: none; padding: 0; font-size: 0.92rem; }
+        .service-list li { margin-bottom: 8px; display: block; }
+        .service-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 8px; font-weight: 900; }
+        .price-tag { background: #fdfaf4; padding: 10px; border-radius: 10px; margin-top: 15px; border: 1px solid #eee; }
+        .price-row { display: flex; justify-content: space-between; font-size: 0.9rem; margin: 4px 0; font-weight: 600; }
+        .highlight-wax { background: #fffaf5; padding: 10px; border-radius: 8px; margin-top: 10px; font-weight: 600; color: var(--text-brown); border: 1px dashed var(--accent-gold); font-size: 0.85rem; text-align: center; }
+        .booking-section { padding: 60px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .booking-container { width: 100%; max-width: 400px; background: white; padding: 40px 20px; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid #eee; }
+        .qr-placeholder img { width: 170px; height: 170px; margin: 25px 0; border-radius: 10px; }
+        .btn-line { background-color: #06C755; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; }
+        footer { padding: 40px 15px; text-align: center; color: #bbb; font-size: 0.8rem; background: #fafafa; }
+        @media (min-width: 768px) { .services { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="badge">💻 工程師的副業：效率洗車找法蘭克</div>
+        <h1>法蘭克精緻汽車美容</h1>
+        <div class="main-slogan">用極致的細節<br>守護值得被珍藏的移動資產</div>
+    </header>
+
+    <section class="intro-features">
+        <div style="font-size: 0.95rem; margin-bottom: 10px;">🛠️ 服務標準：邏輯經營 · 誠信服務</div>
+        <div style="font-size: 0.9rem; color: #666;">移動式服務 · 免費到府牽車 · 汽機車皆可</div>
+        <div class="location-box">新莊｜泰山｜板橋｜蘆洲｜中永和｜大台北｜龜山</div>
+    </section>
+
+    <div class="services" id="pricing">
+        <div class="service-card">
+            <h3>鍍膜包膜維護方案</h3>
+            <ul class="service-list">
+                <li>泡沫預洗 / 柏油去除</li>
+                <li>鐵粉去除 / 水垢去除</li>
+                <li>正洗程序 / 胎皮護理 / 內裝吸塵</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車 $1,400</span><span>休旅 $1,500</span><span>商務 $2,200</span></div>
+            </div>
+            <div class="highlight-wax">Adam's H2O<br>Adam's Boost</div>
+        </div>
+        <div class="service-card">
+            <h3>基礎維護</h3>
+            <ul class="service-list">
+                <li>泡沫預洗 / 柏油去除 / 正洗程序</li>
+                <li>胎皮護理 / 內裝吸塵擦拭</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車 $1,100</span><span>休旅 $1,200</span><span>商務 $1,700</span></div>
+            </div>
+            <div class="highlight-wax">Adam's Spray Wax</div>
+        </div>
+    </div>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2 style="color: var(--text-brown);">預約您的專業洗車</h2>
+            <div class="qr-placeholder">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/AgnWGzM" alt="QR Code">
+            </div>
+            <a href="https://lin.ee/AgnWGzM" class="btn-line">LINE 立即預約</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 法蘭克精緻汽車美容</p>
+    </footer>
+</body>
+</html>
