@@ -6,64 +6,54 @@
     <title>法蘭克精緻汽車美容 | 職人級車漆護理</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #C4A77D; --text-dark: #4A4A4A; --text-brown: #5D4037; --card-dark-bg: #5D4037; --card-dark-text: #FDFBFB; --card-dark-gold: #D4B78D; }
+        :root { --primary-bg: #FDFBFB; --secondary-bg: #F4F1EA; --accent-gold: #C4A77D; --text-dark: #4A4A4A; --text-brown: #5D4037; --card-dark-bg: #5D4037; --card-dark-gold: #D4B78D; }
         body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; margin: 0; background-color: var(--primary-bg); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+        
         header { text-align: center; padding: 50px 15px; background: linear-gradient(rgba(253,251,251,0.96), rgba(253,251,251,0.96)), url('https://images.unsplash.com/photo-1552933529-e359b2477262?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; border-bottom: 1px solid #f0f0f0; }
         .badge { display: inline-block; background: var(--text-brown); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.75rem; margin-bottom: 15px; font-weight: bold; letter-spacing: 1px; }
         h1 { font-size: 1.8rem; color: var(--text-brown); margin: 5px 0; letter-spacing: 2px; font-weight: 800; white-space: nowrap; }
-        .main-slogan { font-size: 1.1rem; color: var(--accent-gold); font-weight: 600; margin: 18px 0 25px; letter-spacing: 1.5px; line-height: 1.7; padding: 0 10px; display: block; text-align: center; }
+        .main-slogan { font-size: 1.1rem; color: var(--accent-gold); font-weight: 600; margin: 18px 0 25px; letter-spacing: 1.5px; line-height: 1.7; padding: 0 10px; text-align: center; }
         
-        .intro-features { padding: 30px 20px; max-width: 800px; margin: 0 auto; background: #fff; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; margin-top: -30px; position: relative; z-index: 10; text-align: center; }
+        /* 服務特色 */
+        .intro-features { padding: 30px 20px; max-width: 800px; margin: -30px auto 30px; background: #fff; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); border: 1px solid #f0f0f0; position: relative; z-index: 10; text-align: center; }
         .feature-line { margin-bottom: 10px; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; }
         .feature-line i { color: var(--accent-gold); margin-right: 10px; font-size: 1rem; }
-        
         .location-box { background: var(--secondary-bg); padding: 15px; border-radius: 12px; margin-top: 20px; color: var(--text-brown); }
-        .location-main { font-weight: 700; font-size: 0.95rem; letter-spacing: 1px; margin-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px; }
-        .location-sub { font-size: 0.85rem; color: #7a6b5d; font-weight: 500; display: block; line-height: 1.6; }
+        .location-main { font-weight: 700; font-size: 0.95rem; margin-bottom: 5px; }
+        .location-sub { font-size: 0.85rem; color: #7a6b5d; font-weight: 500; }
 
-        .nav-btn { background: var(--accent-gold); color: white; padding: 13px 0; width: 210px; border-radius: 50px; text-decoration: none; font-weight: bold; display: block; margin: 25px auto; transition: 0.3s; font-size: 0.95rem; }
         .section-title { text-align: center; color: var(--text-brown); margin: 60px 0 30px; font-size: 1.5rem; position: relative; padding-bottom: 12px; font-weight: 700; }
         .section-title::after { content: ''; width: 35px; height: 3px; background: var(--accent-gold); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
 
-        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 1100px; margin: 0 auto; padding: 0 15px; }
-        .gallery-item { border-radius: 10px; height: 160px; overflow: hidden; background: #eee; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
-
-        .services { padding: 0 15px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        /* 方案卡片基礎樣式 */
+        .services { padding: 0 15px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 25px; }
         .service-card { background: #fff; padding: 30px 20px; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.04); border: 1px solid #f8f8f8; }
         .service-card h3 { color: var(--accent-gold); margin-top: 0; font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 12px; margin-bottom: 20px; text-align: center; }
-        .service-list { list-style: none; padding: 0; font-size: 0.95rem; }
-        .service-list li { margin-bottom: 10px; display: block; text-align: left; }
+        .service-list { list-style: none; padding: 0; font-size: 0.95rem; text-align: left; }
+        .service-list li { margin-bottom: 10px; }
         .service-list li::before { content: '✓'; color: var(--accent-gold); margin-right: 10px; font-weight: 900; }
         
         .price-tag { background: #fdfaf4; padding: 15px; border-radius: 12px; margin-top: 20px; border: 1px solid #eee; }
         .price-row { display: flex; justify-content: space-between; font-size: 0.95rem; margin: 6px 0; color: var(--text-brown); font-weight: 700; }
         .highlight-wax { background: #fffaf5; padding: 12px; border-radius: 10px; margin-top: 15px; font-weight: 600; color: var(--text-brown); border: 1px dashed var(--accent-gold); font-size: 0.9rem; text-align: center; line-height: 1.8; }
 
-        /* 進階方案深色設計 */
-        .advanced-services .service-card { background-color: var(--card-dark-bg); color: var(--card-dark-text); border: none; }
-        .advanced-services .service-card h3 { color: var(--card-dark-gold); border-bottom-color: rgba(255,255,255,0.1); }
-        .advanced-services .service-list li::before { color: var(--card-dark-gold); }
-        .advanced-services .price-tag { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
-        .advanced-services .price-row { color: var(--card-dark-gold); }
-        .advanced-services .highlight-wax { background: rgba(196,167,125,0.1); color: var(--card-dark-gold); border-color: var(--card-dark-gold); }
+        /* 進階方案深色樣式修正 */
+        .advanced-card { background-color: var(--card-dark-bg) !important; color: #fff !important; border: none !important; }
+        .advanced-card h3 { color: var(--card-dark-gold) !important; border-bottom-color: rgba(255,255,255,0.1) !important; }
+        .advanced-card .service-list li::before { color: var(--card-dark-gold) !important; }
+        .advanced-card .price-tag { background: rgba(255,255,255,0.05) !important; border-color: rgba(255,255,255,0.1) !important; }
+        .advanced-card .price-row { color: var(--card-dark-gold) !important; }
+        .advanced-card .highlight-wax { background: rgba(196,167,125,0.1) !important; color: var(--card-dark-gold) !important; border-color: var(--card-dark-gold) !important; }
 
-        .booking-section { padding: 80px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: var(--secondary-bg); }
-        .booking-container { width: 100%; max-width: 400px; background: white; padding: 45px 25px; border-radius: 35px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); margin: 0 auto; box-sizing: border-box; }
-        .qr-placeholder img { width: 180px; height: 180px; margin: 25px 0; border: 1px solid #eee; border-radius: 15px; padding: 8px; }
+        .booking-section { padding: 80px 15px; text-align: center; display: flex; flex-direction: column; align-items: center; background-color: var(--secondary-bg); margin-top: 50px; }
+        .booking-container { width: 100%; max-width: 400px; background: white; padding: 45px 25px; border-radius: 35px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .qr-placeholder img { width: 180px; height: 180px; margin: 25px 0; border-radius: 15px; }
         .btn-line { background-color: #06C755; color: white; padding: 16px 50px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.2rem; }
         
-        .social-info { margin-top: 30px; font-size: 1rem; color: #666; }
-        .social-info a { color: var(--text-brown); text-decoration: none; display: block; margin: 15px 0; }
         footer { padding: 50px 15px; text-align: center; color: #bbb; font-size: 0.85rem; background: #fafafa; }
 
         @media (min-width: 768px) {
-            h1 { font-size: 2.6rem; white-space: normal; }
-            .services { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-            .nav-btn { display: inline-block; margin: 0 15px; width: 220px; }
-            .gallery { grid-template-columns: repeat(4, 1fr); }
-            .gallery-item { height: 210px; }
-            .booking-container { max-width: 500px; }
+            .services { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
         }
     </style>
 </head>
@@ -72,10 +62,6 @@
         <div class="badge">💻 工程師的副業：效率洗車找法蘭克</div>
         <h1>法蘭克精緻汽車美容</h1>
         <div class="main-slogan">用極致的細節<br>守護值得被珍藏的移動資產</div>
-        <p>
-            <a href="#portfolio" class="nav-btn"><i class="fas fa-camera"></i> 查看洗車成品照</a>
-            <a href="#pricing" class="nav-btn"><i class="fas fa-list-ul"></i> 服務方案與價格</a>
-        </p>
     </header>
 
     <section class="intro-features">
@@ -85,21 +71,11 @@
         <div class="feature-line"><i class="fas fa-check-circle"></i> 汽機車皆可服務 · 邏輯經營誠信服務</div>
         <div class="location-box">
             <div class="location-main">新莊｜泰山｜板橋｜蘆洲｜中永和｜大台北｜龜山</div>
-            <div class="location-sub">
-                新莊副都心重劃區 · 新莊頭前重劃區 · 泰山塭仔圳重劃區
-            </div>
+            <div class="location-sub">新莊副都心重劃區 · 新莊頭前重劃區 · 泰山塭仔圳重劃區</div>
         </div>
     </section>
 
-    <h2 class="section-title" id="portfolio">職人洗車成品展示</h2>
-    <div class="gallery">
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1552933529-e359b2477262?auto=format&fit=crop&w=500&q=80"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=500&q=80"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=500&q=80"></div>
-        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=500&q=80"></div>
-    </div>
-
-    <h2 class="section-title" id="pricing">精緻護理方案</h2>
+    <h2 class="section-title">精緻護理方案</h2>
     <section class="services">
         <div class="service-card">
             <h3>鍍膜包膜維護方案</h3>
@@ -112,3 +88,106 @@
                 <div class="price-row"><span>商務</span><span>$2,200</span></div>
             </div>
             <div class="highlight-wax">Adam's H2O<br>Adam's Boost</div>
+        </div>
+        <div class="service-card">
+            <h3>基礎維護</h3>
+            <ul class="service-list">
+                <li>泡沫預洗</li><li>柏油去除</li><li>正洗程序</li><li>胎皮護理</li><li>內裝吸塵擦拭</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車</span><span>$1,100</span></div>
+                <div class="price-row"><span>休旅</span><span>$1,200</span></div>
+                <div class="price-row"><span>商務</span><span>$1,700</span></div>
+            </div>
+            <div class="highlight-wax">Adam's Spray Wax</div>
+        </div>
+        <div class="service-card">
+            <h3>經典護理</h3>
+            <ul class="service-list">
+                <li>包含基礎維護項目</li><li>鐵粉去除</li><li>水垢去除</li><li>※機車經典含塑料護理 $600</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車</span><span>$1,400</span></div>
+                <div class="price-row"><span>休旅</span><span>$1,500</span></div>
+                <div class="price-row"><span>商務</span><span>$2,500</span></div>
+            </div>
+            <div class="highlight-wax">頂級棕梠蠟<br>Adam's H2O</div>
+        </div>
+    </section>
+
+    <h2 class="section-title">進階職人方案</h2>
+    <section class="services">
+        <div class="service-card advanced-card">
+            <h3>極致全護</h3>
+            <ul class="service-list">
+                <li>包含尊榮美容項目</li><li>全車深層去汙程序</li><li>漆面美白清潔蠟施作</li><li>手工上 Swissvax 瑪瑙蠟護理</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車</span><span>$3,400</span></div>
+                <div class="price-row"><span>休旅</span><span>$3,500</span></div>
+                <div class="price-row"><span>商務</span><span>$4,500</span></div>
+            </div>
+            <div class="highlight-wax">Swissvax 瑪瑙蠟<br>Adam's Boost</div>
+        </div>
+        <div class="service-card advanced-card">
+            <h3>小美容</h3>
+            <ul class="service-list">
+                <li>包含尊榮美容項目</li><li>漆面基礎拋光處理</li><li>漆面深層潔淨還原</li><li>細紋淡化提升亮度</li><li>手工上 Swissvax 瑪瑙蠟護理</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車</span><span>$5,000</span></div>
+                <div class="price-row"><span>休旅</span><span>$5,500</span></div>
+                <div class="price-row"><span>商務</span><span>$7,000</span></div>
+            </div>
+            <div class="highlight-wax">Swissvax 瑪瑙蠟<br>Adam's Boost</div>
+        </div>
+        <div class="service-card advanced-card">
+            <h3>鍍膜方案</h3>
+            <ul class="service-list">
+                <li>包含尊榮美容項目</li><li>漆面基礎拋光處理</li><li>Olima T1 外觀塑料長效鍍膜</li><li>Olima RC 9H 鍍膜施作</li>
+            </ul>
+            <div class="price-tag">
+                <div class="price-row"><span>轎車</span><span>$7,000</span></div>
+                <div class="price-row"><span>休旅</span><span>$7,500</span></div>
+                <div class="price-row"><span>商務</span><span>$9,000</span></div>
+            </div>
+            <div class="highlight-wax">Olima RC 9H 鍍膜<br>Olima T1 外觀塑料長效鍍膜</div>
+        </div>
+    </section>
+
+    <h2 class="section-title">專屬加購服務</h2>
+    <section class="services">
+        <div class="service-card">
+            <div class="price-tag" style="background: none; border: none; padding: 0;">
+                <div class="price-row"><span>外觀塑料護理</span><span>+$300</span></div>
+                <div class="price-row"><span>內裝保養護理</span><span>+$300</span></div>
+                <div class="price-row"><span>美白清潔蠟施作</span><span>+$800</span></div>
+                <div class="price-row"><span>進口高階棕梠蠟</span><span>+$1,000</span></div>
+                <div class="price-row"><span>外觀塑料鍍膜</span><span>+$1,500</span></div>
+                <div class="price-row"><span>前擋玻璃鍍膜(含除油墨)</span><span>+$800</span></div>
+                <div class="price-row"><span>全車玻璃鍍膜(含除油墨)</span><span>+$2,000</span></div>
+                <div class="price-row"><span>局部拋光處理</span><span>車況報價</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2 style="color: var(--text-brown); margin-bottom: 10px;">美好行程，從潔淨開始</h2>
+            <div class="qr-placeholder">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://lin.ee/AgnWGzM" alt="預約 QR Code">
+            </div>
+            <br>
+            <a href="https://lin.ee/AgnWGzM" class="btn-line"><i class="fab fa-line"></i> LINE 立即預約</a>
+            <div style="margin-top: 25px; font-size: 0.9rem;">
+                <a href="https://www.facebook.com/profile.php?id=100063773703118" target="_blank" style="color: var(--text-brown); text-decoration: none; display: block; margin-bottom: 10px;">FB：法蘭克精緻汽車美容</a>
+                <a href="https://www.instagram.com/frank_wash_car" target="_blank" style="color: var(--text-brown); text-decoration: none;">IG：@frank_wash_car</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 法蘭克精緻汽車美容 | 邏輯經營 · 誠信服務</p>
+    </footer>
+</body>
+</html>
